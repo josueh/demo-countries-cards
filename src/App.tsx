@@ -1,5 +1,5 @@
-import { Title } from './App.styles';
+import { CountriesMap } from './components/CountriesMap';
 
 export const App = () => {
-  return <Title>Hello, Countries Cards!</Title>;
+  return <CountriesMap />;
 };
