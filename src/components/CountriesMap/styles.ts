@@ -12,12 +12,13 @@ export const Container = styled.div`
 
 export const CountryName = styled.div`
   position: fixed;
-  top: 5vh;
+  bottom: 5vh;
   left: 5vw;
   font-family: sans-serif;
   font-size: 4rem;
   font-weight: bold;
   color: #468;
+  opacity: 0.8;
   user-select: none;
 `;
 
