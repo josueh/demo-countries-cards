@@ -1,6 +1,6 @@
 # demo-countries-cards
 
-A very basic demo application but still useful to understand **how to** visualize a _map.geojson_ file using D3.js and React.  
+A very basic demo application but still useful to understand **how to** visualize a _map.geojson_ file using D3.js and React.
 The purpose of this project is to show how to use D3.js just to generate the _svg paths_ and React for rendering them.
 
 ## Usage
@@ -23,7 +23,7 @@ If you want to see some _Acceptance Tests_, run the demo in one terminal window 
 ```
 npm cypress:open
 ```
-
+ 
 ![demo](./demo/demo.gif)
 
 ## Built With
