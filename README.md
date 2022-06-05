@@ -1,5 +1,7 @@
 # demo-countries-cards
 
+![CI](https://github.com/wlsf82/frontend-and-backend/actions/workflows/ci.yml/badge.svg)
+
 A very basic demo application but still useful to understand **how to** visualize a _map.geojson_ file using D3.js and React.
 The purpose of this project is to show how to use D3.js just to generate the _svg paths_ and React for rendering them.
 

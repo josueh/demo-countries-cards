@@ -1,0 +1,35 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dependencies
+        run: npm install
+      - name: run unit tests
+        run: npm run test
+
+  e2e-tests:
+    needs: unit-tests
+    runs-on: ubuntu-latest
+    container: cypress/browsers:node12.18.3-chrome87-ff82
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: install dependencies
+        uses: cypress-io/github-action@v2
+        with:
+          install-command: npm install
+          runTests: false
+      - name: run e2e tests
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm start
+          command: npm run cypress:run
